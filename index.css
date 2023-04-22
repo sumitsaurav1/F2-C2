@@ -1,0 +1,36 @@
+#inputContainer{
+    display: flex;
+    justify-content: space-between;
+
+}
+select{
+    background-color: inherit;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+input {
+    border: none;
+    outline: 0.1px solid white;
+    background-color: inherit;
+    color: white;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+.card-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+}
+.user-card{
+    outline: 1px solid white;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}

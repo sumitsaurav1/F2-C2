@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2@C2</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body style="background-color: black; color: white;">
+    <section>
+        <div style="margin: 50px 0 10px; ">Filter UI Cards via their Profession</div>
+        <select name="user" id="select-list">
+            <option value="" selected disabled>Profession</option>
+            <option value="developer">Developer</option>
+            <option value="admin">Admin</option>
+        </select>
+        <div class="card-container">
+            <div class="user-card">
+                <span>1.</span>
+                <span>Name: John</span>
+                <span>Profession: developer</span>
+                <span>Age: 18</span>
+            </div>
+            <div class="user-card">
+                <span>2.</span>
+                <span>Name: Jack</span>
+                <span>Profession: developer</span>
+                <span>Age: 20</span>
+            </div>
+            <div class="user-card">
+                <span>3.</span>
+                <span>Name: Karen</span>
+                <span>Profession: admin</span>
+                <span>Age: 19</span>
+            </div>
+        </div>
+        <button onclick="filterList()">Filter</button>
+    </section>
+    <div class="input-card">
+        <p style="margin-bottom: 20px;">Add a new user</p>
+        <div id="inputContainer">
+            <div>
+                <div>Enter Name</div>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <div>Enter Profession</div>
+                <input type="text" id="profession">
+            </div>
+            <div >
+               <div>Enter Age</div>
+                <input type="number" id="age">
+            </div>
+        </div>
+        <button onclick="addUser()">Add User</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
