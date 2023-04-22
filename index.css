@@ -9,6 +9,9 @@ select{
     padding: 10px;
     margin-top: 20px;
 }
+select option{
+    background-color:black;
+}
 input {
     border: none;
     outline: 0.1px solid white;
