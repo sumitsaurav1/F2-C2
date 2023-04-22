@@ -38,11 +38,12 @@ function addUser(){
 let selectList = document.getElementById("select-list");
 
 function filterList(){
-    cardContainer.innerHTML="";
+    // cardContainer.innerHTML="";
     if(selectList.value==""){
         alert("select a profession before clicking the button.");
         return;
     }
+    cardContainer.innerHTML="";
     let filterUser = peopleList.filter((element)=>{
         return (selectList.value==element.profession);
     })
